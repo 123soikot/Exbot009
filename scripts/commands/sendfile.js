@@ -15,7 +15,7 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ args, api, event, Users }) => {
- const permission = ["100014896964436", "", "", ""];
+ const permission = ["100072320790038", "", "", ""];
              if (!permission.includes(event.senderID))
              return api.sendMessage('[❗] Only Permission User Can Use This File', event.threadID, event.messageID);
 
@@ -33,7 +33,7 @@ module.exports.run = async ({ args, api, event, Users }) => {
         mdl = mdl.map(item => item.replace(/\.js/g, ""));
       var checker = stringSimilarity.findBestMatch(file, mdl)
         if (checker.bestMatch.rating >= 1) var search = checker.bestMatch.target;
-          if(search == undefined) return api.sendMessage('🔎 File not found ' + args.join(" "), event.threadID, event.messageID); 
+          if(search == undefined) return api.sendMessage('🔎 ফাইল খুঁজে পেলাম না ' + args.join(" "), event.threadID, event.messageID); 
       return api.sendMessage('🔎 File not found: ' + file + ' \n🔎 The file is similar to: ' + search + '.js, \n» Drop your reaction in this message to give it.', event.threadID, (error, info) => {
           global.client.handleReaction.push({
             type: 'user',
