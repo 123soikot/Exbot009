@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.0",
 	hasPermssion: 2,
 	credits: "MrTomXxX",
-  	Prefix:true,
+  	Prefix:"true",
   	description: "Random girl tiktok videos",
 	category: "Utilities",
 	cooldowns: 3
