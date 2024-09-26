@@ -1,11 +1,18 @@
 const axios = require('axios');
 
-module.exports = {
-  name: 'gemini',
-  description: 'Gemini AI text',
-  usage: '[prompt]',
-  Prefix: false,
-  execute(api, event, args, prefix) {
+module.exports.config = {
+  name: "gemini",
+  version: "1.0.0",
+  permission: 2,
+  credits: "Ex 卝 বয়ফ্রেন্ডヅ",
+  description: "AI",
+  prefix: true, 
+  category: "user", 
+  usages: "Ai",
+  cooldowns: 5,
+  dependencies: {
+	}
+prom execute(api, event, args, prefix) {
     try {
       if (!args.length) {
         api.sendMessage(`🔮 𝗨𝘀𝗮𝗴𝗲: '${prefix}gemini [prompt]' 🔮\n\n𝗘𝘅𝗮𝗺𝗽𝗹𝗲: '${prefix}gemini What will my day be like?'`, event.threadID);
