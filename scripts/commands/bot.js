@@ -5,7 +5,7 @@ module.exports.config = {
   author: "dipto",
   description: "goi bot no prefix baby ",
   category: "fun",
-  Prefix:true,
+  Prefix:"true",
   usages:"{p}"
 };
 
