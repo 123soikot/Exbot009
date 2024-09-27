@@ -2,7 +2,7 @@ const axios = require('axios');
 module.exports.config = {
   name: 'emojigif',
   version: '1.0.0',
-  Prefix:"true",
+  Prefix:'true',
   author: 'Dipto',
   category: 'Fun',
   role: 0,
