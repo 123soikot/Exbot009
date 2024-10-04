@@ -14,11 +14,11 @@
     "100000959749712"
   ],
   "ADMINBOT": [
-    "100000959749712",
+    "100001381266797",
     "100072320790038"
   ],
   "OWNER": ["100000959749712"], 
-  "APPROVED": [],
+  "APPROVED": [100072320790038],
   "disabledcmds": [],
   "disabledevents": [],
   "note": "make sure that the bot name you entered is all lowercase",
