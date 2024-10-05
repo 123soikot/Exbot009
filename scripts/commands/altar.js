@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.2",
 	hasPermssion: 0,
 	credits: "SOIKOT",
-	prefix,true,
+	prefix,"true",
   description: "altar [mentioned]",
 	category: "edit-image",
 	usages: "[@tag]",
