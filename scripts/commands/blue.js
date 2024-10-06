@@ -6,7 +6,7 @@ module.exports.config = {
   hasPermission: 0,
   credits: "Ex 卝 বয়ফ্রেন্ডヅ",
   description: "cmd ai powered by blue",
-  Prefix: false,
+  Prefix:"true",
   category: "Educ",
   usages: "blue [your content]",
   cooldowns: 10
