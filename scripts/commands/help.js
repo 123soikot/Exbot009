@@ -8,7 +8,7 @@ module.exports = {
     info: "display available commands",
     dev: "Jonell Magallanes",
     Prefix: true,
-    category:,
+    category: "general", // এই লাইনটি সংশোধন করা হয়েছে
     usages: "help",
     cooldowns: 10,
 
@@ -46,9 +46,8 @@ module.exports = {
 
             helpMessage += `╰───────────◊\n\n(Page ${page}/${totalPages})\nType ${adminConfig.prefix}help <page number> to see more commands.\n\nDev: ${adminConfig.ownerName}`;
 
-            return api.shareContact(helpMessage, api.getCurrentUserID(), event.threadID);
+            return api.sendMessage(helpMessage, event.threadID, event.messageID);  // Corrected method
         }
-
 
         if (target[0]) {
             const commandName = target[0];
@@ -70,9 +69,9 @@ module.exports = {
                     `│✧ Description: ${commandInfo.info || "Unknown"}\n` +
                     `│✧ Need Prefix: ${commandInfo.onPrefix !== undefined ? commandInfo.onPrefix : "Unknown"}\n` +
                     `╰───────────◊`;
-                return api.shareContact(helpMessage, api.getCurrentUserID(), event.threadID);
+                return api.sendMessage(helpMessage, event.threadID, event.messageID);  // Corrected method
             } else {
-                return api.sendMessage(`Command "${commandName}" not found.`, event.threadID);
+                return api.sendMessage(`Command "${commandName}" not found.`, event.threadID, event.messageID);
             }
         }
     }
