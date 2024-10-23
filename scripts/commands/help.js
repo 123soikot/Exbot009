@@ -6,7 +6,6 @@ module.exports = {
     name: "help",
     usedby: 0,
     info: "display available commands",
-    dev: "Jonell Magallanes",
     Prefix: true,
     category: "general", // এই লাইনটি সংশোধন করা হয়েছে
     usages: "help",
